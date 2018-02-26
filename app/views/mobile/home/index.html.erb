@@ -1,1 +1,91 @@
-<h1>hello</h1>
+<style type="text/css">
+	.item-list{
+		margin-top: 30px;
+	}
+	.item-list a{
+		float: left;
+		display: block;
+		width: 50%;
+		margin: 0;
+		padding: 0;
+	}
+	.item-list a img{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+</style>
+<%if  mobile?%>
+	<h1 class="center">晓晓美容工作室</h1>
+
+	<div class="content">
+		<div class="banner">
+			<div id="myCarousel" class="carousel slide">
+			<!-- 轮播（Carousel）指标 -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<!-- 轮播（Carousel）项目 -->
+			<div class="carousel-inner">
+
+			 	<div class="item active">
+			 		<img src="http://pic.iranshao.com/photo/image/d4a081b249a90c3d26ee13937fab4e21.jpg" alt="First slide">
+			    	<div class="carousel-caption">标题 1</div>
+		  		</div>
+
+			 	<div class="item">
+		    		<img src="http://pic.iranshao.com/photo/image/d4a081b249a90c3d26ee13937fab4e21.jpg" alt="Second slide">
+		    		<div class="carousel-caption">标题 2</div>
+		  		</div>
+
+			  	<div class="item">
+				    <img src="http://pic.iranshao.com/photo/image/d4a081b249a90c3d26ee13937fab4e21.jpg" alt="Third slide">
+				    <div class="carousel-caption">标题 3</div>
+			 	</div>
+
+			</div>
+
+			  <!-- 轮播（Carousel）导航 -->
+		  		<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+				    <span class="carousel-arrow">
+			      		<i class="fa-left fa fa-3x fa-angle-left" aria-hidden="true"></i>
+				    </span>
+			  	</a>
+
+		  		<a class="carousel-control right" href="#myCarousel" data-slide="next">
+			    	<span class="carousel-arrow" >
+		      			<i class="fa-right fa fa-3x fa-angle-right" style="coloe:black" aria-hidden="true"></i>
+			    	</span>
+			  	</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="item-list">
+		<%= link_to  "#", class: "" do %>
+			<%= image_tag("eye-icon") %>
+		<% end %>
+		<%= link_to  "#", class: "" do %>
+			<%= image_tag("wx-icon") %>
+		<% end %>
+		<%= link_to  "#", class: "" do %>
+			<%= image_tag("noseicon") %>
+		<% end %>
+		<%= link_to  plaser_index_path, class: "" do %>
+			<%= image_tag("pmjgicon") %>
+		<% end %>
+	</div>
+
+	<div class="footer">
+		<h1>晓晓美容工作室</h1>
+		<ul>
+			<li>
+				详情请咨询：18792729885
+			</li>
+			<li alter="qrcode"></li>
+		</ul>
+	</div>
+
+<%end%>

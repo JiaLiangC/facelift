@@ -16,5 +16,12 @@
 
 //= require bootstrap.min
 //= require cropbox
+//= require TouchSlide.1.1.source
+
+//= require autosave_article
+//= require simditor
+//= require simditor-autosave
+//= require simditor-fullscreen
+//= require articles
 
 //= require_tree .
